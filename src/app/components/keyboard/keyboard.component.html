@@ -1,1 +1,24 @@
-<p>keyboard works!</p>
+<div class="keyboard-container" fxLayout="row" fxLayoutAlign="space-around center">
+    <div fxLayout="column">
+        <div fxLayout="row" *ngFor="let numberKey of numberKeys; let idx = index" fxFlex="100">
+            <div>
+                <button class="button-number">{{ numberKey[0] }}</button>
+                <button class="button-number">{{ numberKey[1] }}</button>
+                <button class="button-number">{{ numberKey[2] }}</button>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="column">
+        <div fxLayout="row" *ngFor="let actionKey of actionKeys; let idx = index" fxFlex="100">
+            <div>
+                <button [ngClass]="[ 
+                idx == 0 ? 'button-action button-none' : '',
+                idx == 1 ? 'button-action button-cancel' : '',
+                idx == 2 ? 'button-action button-clear' : '',
+                idx == 3 ? 'button-action button-enter' : '', ]" >
+                    {{ actionKey }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

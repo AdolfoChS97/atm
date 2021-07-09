@@ -1,0 +1,48 @@
+button {
+    color: #000;
+    font-size: 40px;
+    height: 60px;
+    font-weight: bold;
+}
+
+.button-enter {
+    background-color: chartreuse;
+}
+
+.button-clear {
+    background-color: yellow;
+}
+
+.button-cancel {
+    background-color: red;
+}
+
+.button-none {
+    background-color: #D3CFCE;
+}
+
+.button-number {
+    width: 80px;
+    height: 90px;
+    background-color: #D3CFCE;
+}
+
+.button-action {
+    width: 200px;
+    height: 90px;
+}
+
+.button-number,.button-action {
+    margin: 10px 3px;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.keyboard-container {
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) rotateX(65deg) rotateZ(0deg);
+    background-color: #8A8A8A;
+    padding: 65px 30px;
+    border-radius: 15px;
+}
+
